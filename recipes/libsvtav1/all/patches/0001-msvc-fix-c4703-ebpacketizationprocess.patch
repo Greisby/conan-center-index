@@ -1,0 +1,15 @@
+diff --git a/Source/Lib/Encoder/Codec/EbPacketizationProcess.c b/Source/Lib/Encoder/Codec/EbPacketizationProcess.c
+index 37114d7..47b6ee1 100644
+--- a/Source/Lib/Encoder/Codec/EbPacketizationProcess.c
++++ b/Source/Lib/Encoder/Codec/EbPacketizationProcess.c
+@@ -479 +479 @@ void *svt_aom_packetization_kernel(void *input_ptr) {
+-    EbObjectWrapper *picture_manager_results_wrapper_ptr;
++    EbObjectWrapper *picture_manager_results_wrapper_ptr = NULL;
+
+diff --git a/Source/Lib/Decoder/Codec/EbDecRestoration.c b/Source/Lib/Decoder/Codec/EbDecRestoration.c
+index 7f111aa..53f3b22 100644
+--- a/Source/Lib/Decoder/Codec/EbDecRestoration.c
++++ b/Source/Lib/Decoder/Codec/EbDecRestoration.c
+@@ -253 +253 @@ void svt_aom_dec_av1_loop_restoration_filter_row(EbDecHandle *dec_handle, int32_t sb_row, uint8_t **rec_buff,
+-    int32_t          *sb_lr_completed_in_row, nsync = 1;
++    int32_t          *sb_lr_completed_in_row = NULL, nsync = 1;
